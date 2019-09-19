@@ -1,4 +1,5 @@
-
+<?php
+include('Server.php');?>
 <!doctype html>
 <html lang="en">
 
@@ -38,7 +39,8 @@
           <div id="side_body_3"></div>
           <div id="side_body_4"></div>
           <div id="center_body">
-           	<form method="post" action="include/addmdcneinc.php">
+           	<form method="post" action="addmedicine.php">
+               <?php include('errors.php')?>
                 <div class="input-group-Header">
 			<p>Add Medicine</p>
 		</div>
@@ -87,7 +89,7 @@
 			<input type="text" name="price per unit"  id="price per unit" placeholder="Enter Price">
 		</div>
 		<div class="input-group">
-			<button type="submit" class="btn" name="submit" >Add</button>
+			<button type="submit" class="btn" name="add_btn" >Add</button>
 		</div>
 	</form>
         </div>
